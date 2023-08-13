@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primart-text:'Merriweather', serif;
+    --secondary-text:'Quicksand', sans-serif;
+    --backup-text:'Karla', sans-serif;
+    --nav-background-color:#1D5D9B;
+    --primary-text-color:aliceblue;
+    --secondary-text-color:azure;
+}
+body{
+    background-color: #252B48;
+}
+h1{
+    font-size: 3rem;
+}p{
+    font-size: 1.5rem;;
+}
+.box{
+    max-width: 1200px;
+    margin-inline: 10%;
+    background-color: #445069;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}  
+a:hover{
+    color: #F4D160;
+}
+#hero{
+    margin-top: 80px;
+}#hero .box{
+    height: 60vh;
+    
+}
+.text{
+    flex-direction: column;
+}
+.text h1{
+    font-size: 3rem;
+    font-family: var(--primart-text);
+    text-align: center;
+    color:aliceblue
+}
+.text p{
+    font-family: var(--secondary-text);
+    text-align: center;
+    color:azure
+}.picture img{
+    width:400px;
+    height: 300px;
+}
+#About-Me{
+    margin-top:100px;
+}#About-Me .box{
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom:30px;
+}.heading-text{
+    padding-top: 30px;
+    font-family: var(--primart-text);
+    color:var(--primary-text-color);
+
+}
+.picture img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border:2px solid white;
+}.secondary-text{
+    font-family: var(--primart-text);
+    color:var(--primary-text-color);
+}.row{
+    margin-top: 20px;
+    justify-content: space-evenly;
+}.card{
+    padding: 10px;
+    border-radius: 2%;
+    background-color: #252B48;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+}.card h3{
+    text-align: center;
+    font-family: var(--primart-text);
+    color: var(--primary-text-color);
+}.card h4{
+    text-align: center;
+    font-family: var(--secondary-text);
+    color:var(--secondary-text-color)
+}
+#Projects{
+    margin-top: 100px;
+    
+}
+#Projects .box{
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.project-row{
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}.project{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.project img{
+    height: 250px;
+    width: 300px;
+}
+#Contact{
+    margin-top: 100px;
+}.cs{
+    background-color: var(--nav-background-color);
+}.icon-row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.icon-row img{
+    height: 50px;
+    width: 50px;
+}.icon-row img:hover{
+    background-color: white;
+    border-radius: 25%;
+}
+@media(max-width:1024px){
+   .project-row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }.card{
+    width: 40%;
+   }
+}
